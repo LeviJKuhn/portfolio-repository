@@ -12,13 +12,13 @@
        ================================================================== -->
   <title>Your Name | Machine Learning Portfolio</title>
 
-  <meta name="description" content="Machine learning portfolio built during the AI4ALL program." />
+  <meta name="description" content="Personal machine learning portfolio." />
 
   <!-- Fonts + stylesheet (you don't need to touch these) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -27,26 +27,23 @@
 
   <!-- ==================================================================
        NAVIGATION BAR
-       EDIT #2 — Replace "your.name" with your name or a nickname.
+       EDIT #2 — Replace "Your Name" with your name.
        The nav links point to sections further down the page — leave
        those alone unless you add/remove sections.
        ================================================================== -->
   <header class="navbar">
     <nav class="nav-inner">
-      <a href="#home" class="nav-logo">
-        <span class="logo-prompt">&gt;_</span> your.name
-      </a>
+      <a href="#home" class="nav-logo">Your Name</a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#journey">Journey</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -57,52 +54,43 @@
     <!-- ================================================================
          HERO — the first thing visitors see
          EDIT #3 — Change:
-           1. "Your Name" to your name
-           2. The short intro sentence below it
-           3. The roles that get "typed out" are edited in js/script.js
-              (look for EDIT #10 at the top of that file)
+           1. The status badge text (or delete the whole <p> if you prefer)
+           2. "Your Name" and the role line under it
+           3. The summary paragraph
+           4. The three quick stats at the bottom
          ================================================================ -->
     <section id="home" class="hero">
-      <div class="hero-content">
-        <p class="hero-badge">AI4ALL Machine Learning Program</p>
+      <p class="hero-badge"><span class="badge-dot"></span>Open to internships &amp; collaborations</p>
 
-        <h1 class="hero-title">
-          Hi, I'm <span class="accent">Your Name</span>
-        </h1>
+      <h1 class="hero-title">Your Name</h1>
 
-        <p class="hero-typed">
-          <span class="typed-prefix">I'm a </span><span id="typedText"></span><span class="cursor">|</span>
-        </p>
+      <p class="hero-role">Machine Learning Student</p>
 
-        <p class="hero-sub">
-          Write 1–2 sentences about yourself here. For example: "I'm a high school
-          student exploring machine learning through AI4ALL. I love turning messy
-          data into models that actually work."
-        </p>
+      <p class="hero-sub">
+        Write 2–3 sentences that summarize who you are and what you work on.
+        For example: "I'm a student focused on machine learning. I build and
+        evaluate models with Python and scikit-learn, and I care about writing
+        clear, reproducible code."
+      </p>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Projects</a>
-          <a href="#contact" class="btn btn-outline">Get In Touch</a>
-        </div>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
 
-      <!-- Decorative "model training" card — no edits needed, but you can
-           change the fun stats inside if you want! -->
-      <div class="hero-card" aria-hidden="true">
-        <div class="hero-card-header">
-          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="hero-card-title">train_model.py</span>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">3</span>
+          <span class="stat-label">Projects Built</span>
         </div>
-        <pre class="hero-card-code"><code><span class="code-kw">import</span> passion <span class="code-kw">as</span> ml
-
-model = ml.Student(
-    name=<span class="code-str">"Your Name"</span>,
-    program=<span class="code-str">"AI4ALL"</span>,
-)
-model.fit(curiosity, hard_work)
-
-<span class="code-comment"># Epoch 12/12 — loss: 0.02</span>
-<span class="code-comment"># status: training complete</span></code></pre>
+        <div class="stat">
+          <span class="stat-value">5+</span>
+          <span class="stat-label">Models Trained</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">2</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
       </div>
     </section>
 
@@ -110,19 +98,19 @@ model.fit(curiosity, hard_work)
          ABOUT SECTION
          EDIT #4 — Change:
            1. The initials in the avatar circle ("YN")
-             (or replace the whole circle with a photo — see the comment)
+             (or replace the circle with a photo — see the comment)
            2. The two paragraphs about yourself
            3. The three "quick fact" boxes
          ================================================================ -->
     <section id="about" class="section">
-      <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
+      <h2 class="section-title">About</h2>
 
       <div class="about-grid">
         <div class="about-photo">
           <!-- OPTION A (default): initials avatar. Change "YN" to your initials. -->
           <div class="avatar-circle">YN</div>
 
-          <!-- OPTION B: use a real photo instead!
+          <!-- OPTION B: use a real photo instead.
                1. Put your photo in the assets/ folder (e.g. assets/me.jpg)
                2. Delete the avatar-circle div above
                3. Un-comment the line below:
@@ -132,14 +120,14 @@ model.fit(curiosity, hard_work)
 
         <div class="about-text">
           <p>
-            Replace this paragraph with your story. Where are you from? What school
-            do you go to? What made you interested in artificial intelligence and
-            machine learning in the first place?
+            Replace this paragraph with your story. Where are you from? What
+            school do you go to? What made you interested in machine learning
+            in the first place?
           </p>
           <p>
-            Use this second paragraph for what you're working on now and where you
-            want to go. What did you build in AI4ALL? What do you want to study or
-            become? What problems do you want to solve with ML?
+            Use this second paragraph for what you're working on now and where
+            you want to go. What have you built so far? What do you want to
+            study or become? What problems do you want to solve with ML?
           </p>
 
           <div class="quick-facts">
@@ -162,12 +150,12 @@ model.fit(curiosity, hard_work)
 
     <!-- ================================================================
          SKILLS SECTION
-         EDIT #5 — Each <li> is one skill "chip".
+         EDIT #5 — Each <li> is one skill tag.
          Add or delete <li> lines to match YOUR real skills.
-         It's okay to have short lists — honesty beats padding!
+         It's okay to have short lists — honesty beats padding.
          ================================================================ -->
     <section id="skills" class="section">
-      <h2 class="section-title"><span class="section-num">02.</span> Skills &amp; Tools</h2>
+      <h2 class="section-title">Skills</h2>
 
       <div class="skills-grid">
         <div class="skill-category">
@@ -214,13 +202,13 @@ model.fit(curiosity, hard_work)
            1. Change the title and description
            2. Fill in the "model card" rows: Dataset / Model / Result
            3. Update the tech tags
-           4. Point the links to your GitHub repo / Colab notebook
+           4. Point the link to your GitHub repo
          To add a 4th project, copy an entire <article>...</article>
          block and paste it below the last one.
          To remove a project, delete its whole <article> block.
          ================================================================ -->
     <section id="projects" class="section">
-      <h2 class="section-title"><span class="section-num">03.</span> ML Projects</h2>
+      <h2 class="section-title">Projects</h2>
 
       <div class="projects-grid">
 
@@ -246,8 +234,7 @@ model.fit(curiosity, hard_work)
           </ul>
 
           <div class="project-links">
-            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://colab.research.google.com" target="_blank" rel="noopener">Notebook</a>
+            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">View on GitHub</a>
           </div>
         </article>
 
@@ -256,7 +243,7 @@ model.fit(curiosity, hard_work)
           <h3 class="project-title">Project Title Two</h3>
           <p class="project-desc">
             Describe your second project here. Don't be shy about challenges you
-            hit — "the data was messy and I had to clean it" shows real skill!
+            hit — "the data was messy and I had to clean it" shows real skill.
           </p>
 
           <div class="model-card">
@@ -272,8 +259,7 @@ model.fit(curiosity, hard_work)
           </ul>
 
           <div class="project-links">
-            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://colab.research.google.com" target="_blank" rel="noopener">Notebook</a>
+            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">View on GitHub</a>
           </div>
         </article>
 
@@ -281,8 +267,8 @@ model.fit(curiosity, hard_work)
         <article class="project-card">
           <h3 class="project-title">Project Title Three</h3>
           <p class="project-desc">
-            Your third project — maybe your AI4ALL group project? Explain your
-            role if it was a team effort.
+            Your third project — maybe a team project? Explain your role if it
+            was a group effort.
           </p>
 
           <div class="model-card">
@@ -298,8 +284,7 @@ model.fit(curiosity, hard_work)
           </ul>
 
           <div class="project-links">
-            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://colab.research.google.com" target="_blank" rel="noopener">Notebook</a>
+            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">View on GitHub</a>
           </div>
         </article>
 
@@ -307,22 +292,20 @@ model.fit(curiosity, hard_work)
     </section>
 
     <!-- ================================================================
-         JOURNEY / EDUCATION SECTION
+         EXPERIENCE & EDUCATION SECTION
          EDIT #7 — A simple timeline. Update the dates, titles, and
          descriptions. Copy/paste a "timeline-item" div to add more steps.
-         The first item (AI4ALL) is probably true for you already!
          ================================================================ -->
-    <section id="journey" class="section">
-      <h2 class="section-title"><span class="section-num">04.</span> My Journey</h2>
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience &amp; Education</h2>
 
       <div class="timeline">
         <div class="timeline-item">
           <span class="timeline-date">2026</span>
-          <h3>AI4ALL Machine Learning Program</h3>
+          <h3>Machine Learning Program or Course</h3>
           <p>
-            Learned the foundations of machine learning: data cleaning, model
-            training and evaluation, and the ethics of AI. Built projects with
-            real datasets alongside an amazing cohort.
+            The program, bootcamp, or course where you learned ML fundamentals:
+            data cleaning, model training and evaluation, and responsible AI.
           </p>
         </div>
 
@@ -353,11 +336,11 @@ model.fit(curiosity, hard_work)
          Don't have LinkedIn yet? Just delete that <a> tag.
          ================================================================ -->
     <section id="contact" class="section contact-section">
-      <h2 class="section-title"><span class="section-num">05.</span> Get In Touch</h2>
+      <h2 class="section-title">Contact</h2>
 
       <p class="contact-blurb">
-        Whether you want to talk about a project, machine learning, or just say
-        hi — my inbox is always open!
+        The best way to reach me is by email. I'm happy to talk about projects,
+        machine learning, or opportunities to collaborate.
       </p>
 
       <a href="mailto:your.email@example.com" class="btn btn-primary contact-btn">
@@ -366,7 +349,7 @@ model.fit(curiosity, hard_work)
 
       <div class="social-links">
         <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-        <span class="social-sep">•</span>
+        <span class="social-sep">·</span>
         <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </section>
@@ -378,7 +361,7 @@ model.fit(curiosity, hard_work)
        EDIT #9 — Put your name here. The year updates automatically.
        ================================================================== -->
   <footer class="footer">
-    <p>© <span id="year"></span> Your Name · AI4ALL Machine Learning Program</p>
+    <p>© <span id="year"></span> Your Name</p>
   </footer>
 
   <script src="js/script.js"></script>
