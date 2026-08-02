@@ -5,7 +5,7 @@
    ==================================================================== */
 
 /* --------------------------------------------------------------------
-   🎨 WANT DIFFERENT COLORS? Change these variables and the whole site
+   WANT DIFFERENT COLORS? Change these variables and the whole site
    updates. Try an accent of #22d3ee (cyan), #a78bfa (purple),
    #34d399 (green), or #fb7185 (pink).
    -------------------------------------------------------------------- */
@@ -355,11 +355,6 @@ a {
   gap: 0.15rem;
 }
 
-.fact-emoji {
-  font-size: 1.4rem;
-  margin-bottom: 0.3rem;
-}
-
 .fact-label {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -436,10 +431,6 @@ a {
   border-color: var(--accent);
   background: var(--bg-card-hover);
   transform: translateY(-4px);
-}
-
-.project-emoji {
-  font-size: 2.2rem;
 }
 
 .project-title {

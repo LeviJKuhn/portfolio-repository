@@ -5,7 +5,7 @@
    ==================================================================== */
 
 /* --------------------------------------------------------------------
-   ✏️ EDIT #10 — THE "TYPING" ROLES IN THE HERO
+   EDIT #10 — THE "TYPING" ROLES IN THE HERO
    These phrases get typed out one-by-one under your name.
    Change them to describe YOU. Keep each one fairly short.
    -------------------------------------------------------------------- */

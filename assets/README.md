@@ -1,4 +1,4 @@
-# 📸 Assets folder
+# Assets folder
 
 Put your images here — for example your profile photo (`me.jpg`) or
 screenshots of your project results.
